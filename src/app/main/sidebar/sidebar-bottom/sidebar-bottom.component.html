@@ -1,0 +1,38 @@
+<div class="sidebar__bottom">
+  <div class="sidebar__bottom__top">
+    <h6>Share Job Listing</h6>
+    <i class="fas fa-bullhorn"></i>
+    <h6 style="margin-bottom: 5px">Entry Level Intellectual Property Attorney</h6>
+    <p>Danish fontina cheddar halloumi. Croque monsieur everyone loves airedale the big</p>
+    <div class="sidebar__bottom__rate">
+      <span><i class="fas fa-star"></i> 4.5</span>
+      <i class="fas fa-share-alt" (mouseover)="toggleShare1()"></i>
+      <div class="shareWrapper" [ngStyle]="{'visibility': isShare1Visible ? 'visible' : 'hidden'}"  (mouseleave)="toggleShare1()">
+        <div class="sharethis-inline-share-buttons"
+        ></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sidebar__bottom__top">
+    <h6 style="margin-bottom: 5px">Staff Attorney</h6>
+    <i class="fas fa-bullhorn"></i>
+    <p>Mascarpone who moved my cheese stilton. Port salut cheese and wine edam taleggio</p>
+    <div class="sidebar__bottom__rate">
+      <span><i class="fas fa-star"></i> 4</span>
+      <i class="fas fa-share-alt" (mouseover)="toggleShare2()"></i>
+      <div class="shareWrapper" [ngStyle]="{'visibility': isShare2Visible ? 'visible' : 'hidden'}"  (mouseleave)="toggleShare2()">
+        <div class="sharethis-inline-share-buttons"
+        ></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar__bottom__under">
+    <p>Help your friends find more job openings</p>
+  </div>
+
+
+
+</div>
